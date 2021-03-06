@@ -1,22 +1,12 @@
-## Phantom for Jekyll
+# michaelheyman.com
 
-A minimalist, responsive portfolio theme for [Jekyll](http://jekyllrb.com/) with Bootstrap.
+## Overview
 
-![preview](preview.jpg)
+[Jekyll](http://jekyllrb.com/) page that uses the [Phantom theme](http://jamigibbs.github.io/phantom/).
 
-[See it in action](http://jamigibbs.github.io/phantom/).
+## How to Install
 
-## Fancy using it for your own site?
-
-Here are some steps to get you started:
-
-1. Clone this repo and cd into the directory:
-
-  ```bash
-  git clone https://github.com/jamigibbs/phantom.git your-dir-name && cd your-dir-name
-  ```
-
-2. Run:
+1. Run:
 
   ```bash
   gem install bundler
@@ -28,13 +18,17 @@ Here are some steps to get you started:
 
   _Don't have Jekyll yet? [Get `er installed then!](http://jekyllrb.com/docs/installation/)_
 
-3. Visit in your browser at:
+2. Visit in your browser at:
 
-  `http://127.0.0.1:4000`
+  `http://localhost:4000`
 
 ## Launching with Github Pages :rocket:
 
 Jekyll + Github pages is a marriage made in heaven. You can [use your own custom domain name](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/) or use the default Github url (ie. http://username.github.io/repository) and not bother messing around with DNS settings.
+
+## Setting up Google Domain with Github Pages
+
+Follow [these instructions](https://dev.to/trentyang/how-to-setup-google-domain-for-github-pages-1p5) to configure Google Domain with Github Pages.
 
 ## Theme Features
 
@@ -87,12 +81,3 @@ By default, pagination on the home page will activate after 10 posts. You can ch
 ```
 
 Read more about the [pagination plugin](http://jekyllrb.com/docs/pagination/).
-
-## Credit
-
-* Bootstrap, http://getbootstrap.com/, (C) 2011 - 2016 Twitter, Inc., [MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE)
-
-* Wow, https://github.com/matthieua/WOW, (C) 2014 - 2016 Matthieu Aussaguel
-, [GPL](https://github.com/matthieua/WOW#open-source-license)
-
-* Animate.css, https://github.com/daneden/animate.css, (C) 2016 Daniel Eden, [MIT](https://github.com/daneden/animate.css/blob/master/LICENSE)
