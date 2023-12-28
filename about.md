@@ -5,7 +5,7 @@ layout: page
 ![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})
 
 <p>
-Hey there! I'm {{ site.title }}, a software engineer bridging the vibrant worlds of Portugal and Portland, Oregon. With over 5 years of hands-on experience, I've delved deep into the art of crafting microservices and seamlessly hosting them on cloud platforms like AWS and GCP.
+Hey there! I'm {{ site.title }}, a software engineer bridging the vibrant worlds of Portugal and Portland, Oregon. With over {{ site.time | date: "%Y" | minus: site.start-year }} years of hands-on experience, I've delved deep into the art of crafting microservices and seamlessly hosting them on cloud platforms like AWS and GCP.
 </p>
 
 <p>
