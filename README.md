@@ -1,83 +1,63 @@
-# michaelheyman.com
+<p align="center">
+    <h2 align="center">Indigo Minimalist Jekyll Template - <a href="https://sergiokopplin.github.io/indigo/">Demo</a></h2>
+</p>
 
-## Overview
+<p align="center">This is a simple and minimalist template for Jekyll for those who likes to eat noodles.</p>
 
-[Jekyll](http://jekyllrb.com/) page that uses the [Phantom theme](http://jamigibbs.github.io/phantom/).
+***
 
-## How to Install
+<p align="center">
+    <b><a href="README.md#what-has-inside">What has inside</a></b>
+    |
+    <b><a href="README.md#setup">Setup</a></b>
+    |
+    <b><a href="README.md#settings">Settings</a></b>
+    |
+    <b><a href="README.md#how-to">How to</a></b>
+</p>
 
-1. Run:
+<p align="center">
+    Light and Dark themes.
+</p>
 
-  ```bash
-  gem install bundler
-  bundle install
-  bundle exec jekyll serve
-  ```
+<p align="center">
+    <img src="https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png" />
+</p>
 
-  You may need to append your commands with `sudo` if you're getting a permissions error.
+## What has inside
 
-  _Don't have Jekyll yet? [Get `er installed then!](http://jekyllrb.com/docs/installation/)_
+- [Jekyll](https://jekyllrb.com/), [Sass](https://sass-lang.com/) ~[RSCSS](https://rscss.io/)~ and [SVG](https://www.w3.org/Graphics/SVG/);
+- Page Speed: [99~Desktop](https://pagespeed.web.dev/analysis/https-sergiokopplin-github-io-indigo/41axptm3as?utm_source=psi&utm_medium=redirect&form_factor=desktop);
 
-2. Visit in your browser at:
+## Setup
 
-  `http://localhost:4000`
+0. :star: to the project. :metal:
+1. Fork the project [Indigo](https://github.com/sergiokopplin/indigo/fork)
+2. Edit `_config.yml` with your data
+3. Write some posts :bowtie:
 
-## Launching with Github Pages :rocket:
+To run locally do the following:
 
-Jekyll + Github pages is a marriage made in heaven. You can [use your own custom domain name](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/) or use the default Github url (ie. http://username.github.io/repository) and not bother messing around with DNS settings.
-
-## Setting up Google Domain with Github Pages
-
-Follow [these instructions](https://dev.to/trentyang/how-to-setup-google-domain-for-github-pages-1p5) to configure Google Domain with Github Pages.
-
-## Theme Features
-
-### Navigation
-
-Navigation can be customized in `_config.yml` under the `nav_item` key. Default settings:
-
-```yaml
-nav_item:
-    - { url: '/', text: 'Home' }
-    - { url: '/about', text: 'About' }
+1. Install [Jekyll](https://jekyllrb.com) and [Bundler](https://bundler.io/).
+2. Clone the forked repo on your machine
+3. Enter the cloned folder via terminal and run:
+```sh
+bundle install
+bundle exec jekyll serve
 ```
+4. Open it in your browser: [http://localhost:4000](http://localhost:4000)
 
-Set the `nav_enable` variable to false in `_config.yml` to disable navigation.
+Or run with [docker](https://github.com/BretFisher/jekyll-serve).
 
-### Contact Form
+## Settings
 
-You can display a contact form within the modal window template. This template is already setup to use the [Formspree](https://formspree.io) email system. You'll just want to add your email address to the form in `/_includes/contact-modal.html`.
+You can customize your site on `_config.yml` file.
 
-Place the modal window template in any place you'd like the user to click for the contact form.
-The template will display a link to click for the contact form modal window:
+## How To?
 
-```liquid
-{% include contact.html %}
-{% include contact-modal.html %}
-```
+Check the [FAQ](./FAQ.md).
 
-### Animation Effects
+---
+## License
 
-Animations with CSS classes are baked into the theme. To animate a section or element, simply add the animation classes:
-
-```html
-<div id="about-me" class="wow fadeIn">
-  I'm the coolest!
-</div>
-```
-
-For a complete list of animations, see the [animation list](http://daneden.github.io/animate.css/).
-
-### Pagination
-
-By default, pagination on the home page will activate after 10 posts. You can change this within `_config.yml`. You can add the pagination to other layouts with:
-
-```liquid
-  {% for post in paginator.posts %}
-    {% include post-content.html %}
-  {% endfor %}
-
-  {% include pagination.html %}
-```
-
-Read more about the [pagination plugin](http://jekyllrb.com/docs/pagination/).
+[MIT](https://kopplin.mit-license.org/) License © Sérgio Kopplin
